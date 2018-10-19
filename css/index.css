@@ -1,0 +1,54 @@
+.calendar {
+    width: 100%;
+    font-family: "Times New Roman";
+}
+
+.tick-dash {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.grid-line {
+    stroke: black;
+    stroke-dasharray: 5px, 5px;
+    opacity: 0.4;
+}
+
+.tick-text {
+
+}
+
+.axis {
+    stroke: black;
+}
+
+.y-axis {
+    stroke: black;
+}
+
+.x-axis {
+    stroke: black;
+}
+
+.meeting-container {
+
+}
+
+.meeting-box {
+    fill-opacity: 0.5;
+    fill: lightblue;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    stroke: lightblue;
+}
+
+.meeting-text{
+    text-anchor: middle;
+    font-size: 14px;
+}
+
+.meeting-handle {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    fill: black;
+}
