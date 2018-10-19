@@ -30,4 +30,7 @@ const drawCalendar = (meetings) => {
     }))
 }
 
-drawCalendar(example1)
+drawCalendar(example3)
+
+console.log('=================================================')
+console.log('To try out different examples, call function `drawCalendar(example1...example4)`')

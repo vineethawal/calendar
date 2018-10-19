@@ -22,7 +22,7 @@ const YAxis = ({
     let tickMinute = plotStartMinutes
 
     while (tickMinute <= plotEndMinutes) {
-        yAxis.appendChild(Tick({tickMinute, plotHeight, plotWidth, minuteHeight}))
+        yAxis.appendChild(Tick({tickMinute, plotHeight, plotWidth, minuteHeight, plotStartMinutes}))
         tickMinute += YAxis.tickFrequency
     }
 

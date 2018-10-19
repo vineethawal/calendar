@@ -3,10 +3,11 @@ const Tick = ({
     plotHeight,
     plotWidth,
     minuteHeight,
+    plotStartMinutes,
 }) => {
     const tick = document.createElementNS('http://www.w3.org/2000/svg', 'g')
 
-    const top = plotHeight - (tickMinute * minuteHeight)
+    const top = plotHeight - ((tickMinute - plotStartMinutes) * minuteHeight)
     tick.setAttribute('transform', `translate(0, ${top-(Tick.fontSize/2)})`)
 
     const dash = document.createElementNS('http://www.w3.org/2000/svg', 'line')

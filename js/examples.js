@@ -16,7 +16,7 @@ const example2 = [
 ]
 
 const example3 = [
-    { id: 'New 1', start: 150, end: 270 },
+    { id: 'New', start: 150, end: 270 },
 ]
 
 const example4 = []
