@@ -47,6 +47,7 @@ const meetingsPlotter = ({
         return meeting
     })
 
-    console.log('meetingsPlotter output', {meetingsPlot})
+    // console.log('meetingsPlotter output', {meetingsPlot})
+
     return {meetingsPlot}
 }

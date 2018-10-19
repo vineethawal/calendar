@@ -47,7 +47,7 @@ const plotSizeCalculator = ({meetings}) => {
 
     const minuteHeight = plotHeight/minutesOnPlot
 
-    console.log('plotSizeCalculator output', {plotWidth, plotHeight, plotStartMinutes, plotEndMinutes, minuteHeight, minutesOnPlot})
+    // console.log('plotSizeCalculator output', {plotWidth, plotHeight, plotStartMinutes, plotEndMinutes, minuteHeight, minutesOnPlot})
 
     return {plotWidth, plotHeight, plotStartMinutes, plotEndMinutes, minuteHeight, minutesOnPlot}
 }

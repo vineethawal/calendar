@@ -25,7 +25,7 @@ const meetingsWidthRatioCalculator = ({meetings, overlaps = {}}) => {
         meetingsWidthRatio[meeting.id] = 1/maxPeerOverlaps
     })
 
-    console.log('meetingsWidthRatioCalculator output', {meetingsWidthRatio})
+    // console.log('meetingsWidthRatioCalculator output', {meetingsWidthRatio})
 
     return {meetingsWidthRatio}
 }

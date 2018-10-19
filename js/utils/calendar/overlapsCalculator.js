@@ -34,7 +34,7 @@ const overlapsCalculator = ({meetings}) => {
         }
     }
 
-    console.log('overlapsCalculator output', {overlaps})
+    // console.log('overlapsCalculator output', {overlaps})
 
     return {overlaps}
 }

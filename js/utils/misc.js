@@ -1,4 +1,8 @@
-const getReadableHours = ({tickMinute}) => {
+const getReadableHours = ({tickMinute} = {}) => {
+    if (tickMinute === undefined) {
+        throw new Error('Missing param tickMinute')
+    }
+
     const minuteOfDay = (DAY_START_TIME * 60) + tickMinute
 
     let hours = Math.floor(minuteOfDay/60)

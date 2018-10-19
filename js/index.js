@@ -33,4 +33,7 @@ const drawCalendar = (meetings) => {
 drawCalendar(example1)
 
 console.log('=================================================')
-console.log('To try out different examples, call function `drawCalendar(example1...example4)`')
+console.log('To try out different examples call function `drawCalendar(example)`. ' +
+    'Pass any of the following objects as a param: example1, example2, example3, example4')
+console.log('=================================================')
+
