@@ -148,6 +148,29 @@ const calendarComponentTests = () => {
     console.log('-------------------------')
 
     try {
+        console.log('Should throw missing param `meetingsPlot` error')
+        Calendar({
+            plotWidth: 600,
+            plotHeight: 420,
+            plotStartMinutes: 0,
+            plotEndMinutes: 240,
+            minuteHeight: 1.75,
+        })
+        failed++
+        console.error('FAILED')
+    } catch (error) {
+        console.log(error)
+        if (error.message === 'Missing param meetingsPlot') {
+            passed++
+            console.log('PASSED')
+        } else {
+            failed++
+            console.error('FAILED')
+        }
+    }
+    console.log('-------------------------')
+
+    try {
         console.log('Should return calendar component with valid attributes')
         const calendar = Calendar({
             plotWidth: 600,

@@ -2,6 +2,13 @@ const XAxis = ({
     plotWidth,
     plotHeight
 }) => {
+    if (!plotWidth) {
+        throw new Error('Missing param plotWidth')
+    }
+    if (!plotHeight) {
+        throw new Error('Missing param plotHeight')
+    }
+
     const xAxis = document.createElementNS('http://www.w3.org/2000/svg', 'g')
 
     xAxis.setAttribute('transform', `translate(${YAxis.width}, ${plotHeight+Calendar.bufferTop})`)

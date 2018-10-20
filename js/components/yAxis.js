@@ -5,6 +5,22 @@ const YAxis = ({
     plotEndMinutes,
     minuteHeight,
 }) => {
+    if (!plotWidth) {
+        throw new Error('Missing param plotWidth')
+    }
+    if (!plotHeight) {
+        throw new Error('Missing param plotHeight')
+    }
+    if (plotStartMinutes === undefined) {
+        throw new Error('Missing param plotStartMinutes')
+    }
+    if (!plotEndMinutes) {
+        throw new Error('Missing param plotEndMinutes')
+    }
+    if (!minuteHeight) {
+        throw new Error('Missing param minuteHeight')
+    }
+
     const yAxis = document.createElementNS('http://www.w3.org/2000/svg', 'g')
 
     yAxis.setAttribute('transform', `translate(0, ${Calendar.bufferTop})`)

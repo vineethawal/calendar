@@ -113,7 +113,7 @@ const tickComponentTests = () => {
     console.log('-------------------------')
 
     try {
-        console.log('Should return meeting component with valid attributes')
+        console.log('Should return tick component with valid attributes')
         const tick = Tick({
             tickMinute: 120,
             plotHeight: 420,
