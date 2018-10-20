@@ -3,13 +3,116 @@ const meetingComponentTests = () => {
     let failed = 0
 
     try {
-        console.log('Should throw missing param `meeting` error')
-        Meeting()
+        console.log('Should throw missing param `id` error')
+        Meeting({
+            'start':60,
+            'end':120,
+            'height':105,
+            'top':525,
+            'width':600,
+            'left':0,
+        })
         failed++
         console.error('FAILED')
     } catch (error) {
         console.log(error)
-        if (error.message === 'Missing param meeting') {
+        if (error.message === 'Missing param id') {
+            passed++
+            console.log('PASSED')
+        } else {
+            failed++
+            console.error('FAILED')
+        }
+    }
+    console.log('-------------------------')
+
+    try {
+        console.log('Should throw missing param `height` error')
+        Meeting({
+            'id':'New',
+            'start':60,
+            'end':120,
+            'top':525,
+            'width':600,
+            'left':0,
+        })
+        failed++
+        console.error('FAILED')
+    } catch (error) {
+        console.log(error)
+        if (error.message === 'Missing param height') {
+            passed++
+            console.log('PASSED')
+        } else {
+            failed++
+            console.error('FAILED')
+        }
+    }
+    console.log('-------------------------')
+
+    try {
+        console.log('Should throw missing param `top` error')
+        Meeting({
+            'id':'New',
+            'start':60,
+            'end':120,
+            'height':105,
+            'width':600,
+            'left':0,
+        })
+        failed++
+        console.error('FAILED')
+    } catch (error) {
+        console.log(error)
+        if (error.message === 'Missing param top') {
+            passed++
+            console.log('PASSED')
+        } else {
+            failed++
+            console.error('FAILED')
+        }
+    }
+    console.log('-------------------------')
+
+    try {
+        console.log('Should throw missing param `width` error')
+        Meeting({
+            'id':'New',
+            'start':60,
+            'end':120,
+            'height':105,
+            'top':525,
+            'left':0,
+        })
+        failed++
+        console.error('FAILED')
+    } catch (error) {
+        console.log(error)
+        if (error.message === 'Missing param width') {
+            passed++
+            console.log('PASSED')
+        } else {
+            failed++
+            console.error('FAILED')
+        }
+    }
+    console.log('-------------------------')
+
+    try {
+        console.log('Should throw missing param `left` error')
+        Meeting({
+            'id':'New',
+            'start':60,
+            'end':120,
+            'height':105,
+            'top':525,
+            'width':600,
+        })
+        failed++
+        console.error('FAILED')
+    } catch (error) {
+        console.log(error)
+        if (error.message === 'Missing param left') {
             passed++
             console.log('PASSED')
         } else {
@@ -22,7 +125,13 @@ const meetingComponentTests = () => {
     try {
         console.log('Should return meeting component with valid attributes')
         const meeting = Meeting({
-            meeting: {'id':'New','start':60,'end':120,'height':105,'top':525,'width':600,'left':0},
+            'id':'New',
+            'start':60,
+            'end':120,
+            'height':105,
+            'top':525,
+            'width':600,
+            'left':0,
         })
 
         const assert1 = meeting.getAttribute('class') === 'meeting-container'

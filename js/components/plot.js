@@ -30,7 +30,7 @@ const Plot = ({
     plot.setAttribute('transform', `translate(${YAxis.width}, ${Calendar.bufferTop})`)
 
     meetingsPlot.forEach((meeting) => {
-        plot.appendChild(Meeting({meeting}))
+        plot.appendChild(Meeting(meeting))
     })
     return plot
 }
