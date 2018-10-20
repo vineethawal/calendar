@@ -5,6 +5,22 @@ const Tick = ({
     minuteHeight,
     plotStartMinutes,
 }) => {
+    if (tickMinute === undefined) {
+        throw new Error('Missing param tickMinute')
+    }
+    if (!plotHeight) {
+        throw new Error('Missing param plotHeight')
+    }
+    if (!plotWidth) {
+        throw new Error('Missing param plotWidth')
+    }
+    if (!minuteHeight) {
+        throw new Error('Missing param minuteHeight')
+    }
+    if (plotStartMinutes === undefined) {
+        throw new Error('Missing param plotStartMinutes')
+    }
+
     const tick = document.createElementNS('http://www.w3.org/2000/svg', 'g')
 
     const top = plotHeight - ((tickMinute - plotStartMinutes) * minuteHeight)
