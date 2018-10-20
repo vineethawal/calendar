@@ -14,7 +14,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
              ],
         })
         failed++
@@ -43,7 +43,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
             ],
         })
         failed++
@@ -72,7 +72,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
             ],
         })
         failed++
@@ -101,7 +101,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
             ],
         })
         failed++
@@ -130,7 +130,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
             ],
         })
         failed++
@@ -183,7 +183,7 @@ const meetingsPlotterTests = () => {
                 { id: 'New 1', start: 150, end: 270 },
                 { id: 'New 2', start: 240, end: 300 },
                 { id: 'New 3', start: 200, end: 360 },
-                { id: 'New 4', start: 180, end: 330 }
+                { id: 'New 4', start: 180, end: 330 },
             ],
         })
         failed++
@@ -269,14 +269,14 @@ const meetingsPlotterTests = () => {
                 {'id':'New 1','start':150,'end':270},
                 {'id':'New 2','start':240,'end':300},
                 {'id':'New 3','start':200,'end':360},
-                {'id':'New 4','start':180,'end':330}
+                {'id':'New 4','start':180,'end':330},
             ],
             'overlaps': {
                 'New':{'counter':1,'total':1,'overlapsWith':{}},
                 'New 1':{'counter':1,'total':4,'overlapsWith':{}},
                 'New 2':{'counter':2,'total':4,'overlapsWith':{}},
                 'New 3':{'counter':3,'total':4,'overlapsWith':{}},
-                'New 4':{'counter':4,'total':4,'overlapsWith':{}}
+                'New 4':{'counter':4,'total':4,'overlapsWith':{}},
             },
             'meetingsWidthRatio':   {'New':1,'New 1':0.25,'New 2':0.25,'New 3':0.25,'New 4':0.25}
         })

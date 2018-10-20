@@ -28,6 +28,8 @@ const drawCalendar = (meetings) => {
         meetings,
         meetingsPlot,
     }))
+
+    return 'Calendar re-rendered!! :)'
 }
 
 drawCalendar(example1)

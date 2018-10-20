@@ -1,6 +1,10 @@
 const Meeting = ({
     meeting,
-}) => {
+} = {}) => {
+    if (!meeting) {
+        throw new Error('Missing param meeting')
+    }
+
     const meetingContainer = document.createElementNS('http://www.w3.org/2000/svg', 'g')
 
     meetingContainer.setAttribute('transform', `translate(${meeting.left}, ${meeting.top})`)
