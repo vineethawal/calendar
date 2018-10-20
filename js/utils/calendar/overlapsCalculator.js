@@ -1,4 +1,7 @@
-const overlapsCalculator = ({meetings}) => {
+const overlapsCalculator = ({meetings} = {}) => {
+
+    // console.log('overlapsCalculator inputs', {meetings})
+
     const overlaps = {}
 
     if (!meetings) {
@@ -6,7 +9,7 @@ const overlapsCalculator = ({meetings}) => {
     }
 
     if (!meetings.length) {
-        return overlaps
+        return {overlaps}
     }
 
 

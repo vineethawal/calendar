@@ -9,6 +9,17 @@ const meetingsPlotter = ({
     meetingsWidthRatio = {},
 }) => {
 
+    // console.log('meetingsPlotter inputs', {
+    //     plotWidth,
+    //     plotHeight,
+    //     plotStartMinutes,
+    //     plotEndMinutes,
+    //     minuteHeight,
+    //     meetings,
+    //     overlaps,
+    //     meetingsWidthRatio,
+    // })
+
     if (!plotHeight) {
         throw new Error('Missing param plotHeight')
     }
@@ -24,11 +35,11 @@ const meetingsPlotter = ({
     if (!minuteHeight) {
         throw new Error('Missing param minuteHeight')
     }
-    if (plotEndMinutes <= plotStartMinutes) {
-        throw new Error('`plotEndMinutes` should be greater than `plotStartMinutes`')
-    }
     if (!meetings) {
         throw new Error('Missing param meetings')
+    }
+    if (plotEndMinutes <= plotStartMinutes) {
+        throw new Error('`plotEndMinutes` should be greater than `plotStartMinutes`')
     }
     if (!meetings.length) {
         return {meetingsPlot: []}

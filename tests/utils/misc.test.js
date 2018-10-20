@@ -3,10 +3,10 @@ const getReadableHoursTests = () => {
     let failed = 0
 
     try {
-        console.log('Should throw missing param error')
+        console.log('Should throw missing param `tickMinute` error')
         getReadableHours()
         failed++
-        console.log('PASSED')
+        console.error('FAILED')
     } catch (error) {
         console.log(error)
         if (error.message === 'Missing param tickMinute') {
@@ -14,7 +14,7 @@ const getReadableHoursTests = () => {
             console.log('PASSED')
         } else {
             failed++
-            console.log('FAILED')
+            console.error('FAILED')
         }
     }
     console.log('-------------------------')
@@ -28,12 +28,12 @@ const getReadableHoursTests = () => {
             console.log('PASSED')
         } else {
             failed++
-            console.log('FAILED')
+            console.error('FAILED')
         }
     } catch (error) {
-        console.log(error)
+        console.error(error)
         failed++
-        console.log('FAILED')
+        console.error('FAILED')
     }
     console.log('-------------------------')
 
@@ -46,12 +46,12 @@ const getReadableHoursTests = () => {
             console.log('PASSED')
         } else {
             failed++
-            console.log('FAILED')
+            console.error('FAILED')
         }
     } catch (error) {
-        console.log(error)
+        console.error(error)
         failed++
-        console.log('FAILED')
+        console.error('FAILED')
     }
     console.log('-------------------------')
 

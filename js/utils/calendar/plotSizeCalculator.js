@@ -1,4 +1,7 @@
-const plotSizeCalculator = ({meetings}) => {
+const plotSizeCalculator = ({meetings} = {}) => {
+
+    // console.log('plotSizeCalculator inputs', {meetings})
+
     if (!meetings) {
         throw new Error('Missing param meetings')
     }
